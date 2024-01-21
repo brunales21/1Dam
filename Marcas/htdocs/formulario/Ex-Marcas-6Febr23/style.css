@@ -1,0 +1,46 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#logo {
+    grid-area: 1/1 / 2/2;
+    padding: 2%;
+}
+
+#container {
+    background-color: rgb(36, 48, 216);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
+}
+
+nav {
+    background-color: rgb(36, 48, 216);
+    grid-area: 1/2 / 2/4;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+
+#fondo {
+    grid-area: 2/1 / 4/4;
+    width: 100%;
+    height: 100%;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 2em;
+    padding: 2%;
+    margin: 0 2% 2% 0;
+}

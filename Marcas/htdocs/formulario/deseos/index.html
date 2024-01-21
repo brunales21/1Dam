@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"> 
+        <div id="col1"></div>
+        <div id="col2"><img src="fotos-PLANTAS/albahaca-recortada.jpg" alt=""></div>
+        <div id="col3">
+            <img src="cajonDeDeseos.png" alt="">
+
+            <form action="procesarDatos.php" method="post">
+                <input type="text" name="nombreApellidos" placeholder="Nombre y Apellidos">
+                <input type="text" name="direccion" placeholder="Dirección">
+
+                <label for="localidad"></label>
+                    <select id="localidad" name="localidad" form="localidadform">
+                        <option disabled selected="">Localidad</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Andalucia">Andalucia</option>
+                        <option value="Extremadura">Extremadura</option>
+                        <option value="Murcia">Murcia</option>
+                    </select>
+                    
+                <label for="provincia"></label>
+                    <select id="provincia" name="provincia" form="provinciaform">
+                        <option disabled selected="">Provincia</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Andalucia">Sevilla</option>
+                        <option value="Extremadura">Badajoz</option>
+                        <option value="Murcia">Narnia</option>
+                    </select>
+                <input type="text" name="deseo" placeholder="Deseo...">
+                    <label for="condicion" id="cbl">Deseo realizar un seguimiento de mis deseos</label><br>
+                    <input type="checkbox" name="condicion" value="1">
+                    <input type="text" name="email" placeholder="email">
+                    <input id="sendButton" type="submit" value="Enviar">
+            </form>
+        </div>
+        <div id="col4"><img src="fotos-PLANTAS/Romero-recortado.jpg" alt=""></div>
+    </div>
+    
+</body>
+</html>

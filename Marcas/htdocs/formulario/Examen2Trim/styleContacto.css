@@ -1,0 +1,99 @@
+@font-face {
+    font-family: nav-font;
+    src: url(fuente/secrcode.ttf);
+}
+
+@font-face {
+    font-family: lema-font;
+    src: url(fuente/HunDIN1451.ttf);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+
+}
+
+nav {
+    background-color: blue;
+
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
+
+    height: 8em;
+}
+
+#logo {
+    margin-left: 4%;
+}
+
+#menu {
+    background-color: blue;
+    grid-area: 1/2 / 3/3;
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 4%;
+    margin-right: 2%;
+}
+
+a {
+    color: white;
+    font-family: nav-font;
+
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+#cromo {
+    margin-right: -4%;
+}
+
+#cromo figcaption {
+    width: 80%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    width: 25%;
+}
+figure img {
+    width: 100%;
+}
+
+#marco {
+    background-color: blue;
+    height: 35em;
+    display: block;
+    margin-top: 20%;
+    z-index: -1;
+
+}
+
+#checkboxes {
+    width: 125%;
+}
+#marco figcaption {
+    background-color: blue;
+    width: 60%;
+    margin-left: 15%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#cromo img {
+    border-style: solid;
+    border-color: white;
+}
+
+input {
+    justify-content: center;
+}

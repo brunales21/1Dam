@@ -1,0 +1,109 @@
+#menu {
+    display: grid;
+    grid-template-areas: 'icon-box nav';
+    grid-template-columns: 10% 90%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    grid-area: nav;
+    background-color: black;
+}
+#icon-box {
+    display: flex;
+    justify-content: center;
+    grid-area: icon-box;
+    padding: 9%;
+    background-color: black;
+}
+
+#contenido-segundoMenu {
+    display: none;
+}
+
+.icon-menu3 {
+    display: none;
+}
+
+.icon-cross {
+    display: none;
+}
+
+.icon-apple {
+    color: white; 
+    
+}
+
+.icon-mobile {
+    color: black;
+    display: block;
+    padding: 5%;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+}
+
+
+#contenido-segundoMenu:target {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+@media (max-width:767px) {
+    body {
+        background-color: black;
+    }
+
+    #mi-nav {
+        display: none;
+    }
+
+    .icon-cross {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #menu {
+        display: grid;
+        grid-template-areas: 'icon-box'
+                            'nav';
+        grid-template-rows: 30% auto;
+        grid-template-columns: 100%;
+    }
+
+    #icon-box {
+        grid-area: icon-box;
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+    }    
+
+
+    #mi-nav:target {
+        grid-area: nav;
+        background-color: black;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+
+    .icon-appleinc {
+        display: flex;
+    }
+
+    .icon-menu3 {
+        display: flex;
+    }
+}

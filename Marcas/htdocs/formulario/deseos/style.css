@@ -1,0 +1,166 @@
+/*
+body {
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#col1 {
+    background-color: grey;
+    width: 15%;
+}
+
+#col2 {
+    width: 15%;
+}
+
+#col3 {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    width: 40%;
+}
+
+form {
+    display: block;
+    justify-content: center;
+    background-color: red;
+    width: 90%;
+    margin-top: 15%;
+
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    width: 90%;
+    border-style: solid;
+    border-color: rgb(52, 93, 196);
+}
+
+#col4 {
+    width: 20%;
+}
+*/
+
+
+
+
+
+
+body {
+    width: 100%;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 'frase img1 form img2';
+    grid-template-columns: 15% 15% 35% auto;
+    grid-template-rows: 100%;
+}
+
+#col1 {
+    grid-area: frase;
+    background-color: grey;
+    border-color: white;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: 1em;
+
+}
+
+
+#col2 {
+    grid-area: img1;
+    border-color: white;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: 1em;
+
+}
+
+
+#col3 {
+    grid-area: form;
+    padding: 2em;
+
+    border-color: black;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: 2em;
+
+
+}
+
+#col3 img {
+    width: 55%;
+    height: 25%;
+    margin-left: 20%;
+    margin-top: -25%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: -22%;
+    width: 135%;
+    border-style: solid;
+    border-color: rgb(52, 93, 196);
+    height: 4em;
+    
+}
+
+select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: -22%;
+    width: 135%;
+    border-style: solid;
+    border-color: rgb(52, 93, 196);
+    height: 4em;
+    background-color: white;
+}
+
+#col4 {
+    grid-area: img2;
+    width: 150%;
+    border-color: white;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: 1em;
+}
+
+#col4, img {
+    width: 90%;
+}
+
+#col2, img {
+    height: 100%;
+}
+
+#cb {
+    width: 50%;
+    margin-left: 10%;
+}
+
+#sendButton {
+    width: 30%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-style: none;
+    margin-left: 15%;
+}

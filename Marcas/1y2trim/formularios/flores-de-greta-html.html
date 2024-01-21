@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flores-de-greta-css.css">
+</head>
+<body>
+    <nav>
+        <a href="">Inicio</a>
+        <a href="">Nuestro trabajo</a>
+        <a href="">Tienda</a>
+        <a href="">Contacto</a>
+    </nav>
+
+    <section>
+        <div id="logo-section">
+            <div id="imgs">
+                <img src="logo-social.png" alt="">
+                <img src="logo-social.png" alt="">
+            </div>
+           
+            <div id="caja-greta">
+                <p>Las flores de Greta</p>
+            </div>
+        </div>
+        
+
+        <div id="form">
+            <form action="procesar-datos.php" method="post">
+                <label for="nombre_usuario">Usuario: </label>
+                <input type="text" name="usuario" id="nombre_usuario">
+                <br><br>
+                <label for="clave_usuario">Contraseña: </label>
+                <input type="password" name="clave" id="clave_usuario">
+                <br><br>
+                <input type="submit" value="Enviar datos">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    margin:0;
+}
+header{
+    background-color: rgb(153, 57, 57);
+    height: 10em;
+}
+#logo{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin-top:-8.2em;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+nav a{
+    font-size: 150%;
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+}
+section{
+    width: 100%;
+}
+section div h1{
+    font-size: 350%;
+}
+.mifig {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    align-items: center;
+   
+}
+.mifig img{
+    width: 50%;
+    margin-left: 10px;
+}
+.mifig figcaption{
+    width: 40%;
+    margin-left: 15px;
+}
+.mifig figcaption p{
+    font-size: 2em;
+}
+.mifig figcaption a{
+    font-size: 1.5em;
+    margin-top: 50%;
+    margin-bottom: 100%;
+    width: 100%;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50%;
+}
+#ultimo{
+    background-color: rgb(146, 57, 57);
+    height: 180px;
+}
+#mobile{
+    display: none;
+}
+#caja-boton{
+    display: none;
+}
+@media (max-width:767px){
+    #cabeceraMov, #mobile,#caja-boton {
+        display: block;
+    }
+    #cabeceraEsc, section img,#negro,#gris,#ultimo {
+        display: none;
+    }
+    nav {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+    }
+    section div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    section div h1{
+        width: 80%;
+        font-size: 160%;
+        display: flex;
+        justify-content: center space-between;
+        margin-bottom: 10px;
+    }
+    .mifig figcaption{
+        width: 100%;
+    }
+    .mifig figcaption p{
+        font-size:33px ;
+    }
+    .mifig figcaption a{
+        font-size:20px ;
+    }
+    .RAYA1{
+        width: 400px;
+    }
+    .RAYA2{
+        width: 330px;
+    }
+    .mifig img{
+        display: flex;
+        margin-left: 45px;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    #mobile{
+        width: 50%;
+        display: flex;
+        margin-left: 30%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #mobile img{
+        margin-top: -50px;
+        height: 130px;
+        width: 130px;
+        margin-left: 20px;
+    }
+    #caja-boton {
+        width: 99%;
+    }
+    #caja-boton img {
+        width: 100%;
+        height: 75px;
+        margin-top: -10px;
+    }
+}

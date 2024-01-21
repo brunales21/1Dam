@@ -1,0 +1,195 @@
+
+#nav {
+    background-color: rgb(203, 203, 203);
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+#abrir, #cerrar {
+    display: none;
+}
+
+span {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+}
+
+section {
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas: 'left-side form';
+    grid-template-columns: 40% auto;
+    grid-template-rows: 150%;
+}
+
+#logo-section {
+    grid-area: left-side;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#caja-greta {
+
+    background-color: rgb(234, 215, 70);
+    width: 15%;
+    border-style: dashed;
+    border-radius: 3em;
+    padding: 2%;
+    margin-left: 11em;
+    position: absolute;
+    transform: rotate(-15deg);
+    mix-blend-mode: luminosity;
+
+}
+
+#imgs {
+    margin-top: -30%;
+}
+
+img {
+    margin-top: -3%;
+    margin-left: 50%;
+    width: 20%;
+    border-radius: 1em;
+
+}
+
+#form {
+    grid-area: form;
+    padding: 2%;
+    border-style: solid;
+    border-radius: 1em;
+    width: 60%;
+    box-shadow: 10px 15px rgb(223, 232, 232);
+}
+
+#enviar-boton {
+    background-color: rgb(6, 6, 145);
+    color: wheat;
+    border-radius: 2em;
+    width: 10em;
+    padding: 1%;
+    margin-left: 35%;
+}
+
+#clave_usuario, #nombre_usuario {
+    width: 100%;
+}
+
+
+p {
+    color: white;
+}
+
+#box {
+    color: black;
+}
+
+#frase-ofertas {
+    display: none;
+}
+
+@media(max-width: 767px) {
+
+    section {
+        margin-top: 5%;
+        display: grid;
+        grid-template-areas: 'left-side'
+                                'form';
+        grid-template-columns: 100%;
+        grid-template-rows: 50% auto;
+    }
+
+    #nav {
+        background-color: white;
+        display: flex;
+        justify-content: start;
+    }
+
+    #imgs {
+        display: none;
+    }
+
+    #caja-greta {
+        background-color: transparent        ;
+        border-style: none;
+        transform: none;
+        width: 20em;
+        margin-left: 17%;
+        display: grid;
+        grid-template-areas: 'titulo'
+                            'frase';
+        grid-template-rows: 50% auto;
+        grid-template-columns: 100%;
+    }
+
+    #titulo {
+        margin-left: 14%;
+        font-size: 135%;
+        grid-area: titulo;
+        color: black;
+    }
+    
+    #frase-ofertas {
+        color: black;
+        grid-area: frase;
+        display: block;
+    }
+
+    #form {
+        width: 85%;
+        border: none;
+        box-shadow: none;
+        padding: 10%;
+    }
+
+    a {
+        color: black;
+        justify-content: start;
+
+    }
+
+    ul{
+        display: none;
+    }
+
+    #abrir {
+        display: block;
+        color: black;
+    }
+
+    #cerrar {
+        display: none;
+    }
+
+    #nav:target ul{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 1%;
+        
+    }
+
+    #nav:target #abrir{
+        display: none;
+    }
+
+
+    #nav:target #cerrar{
+        display: block;
+    }
+}

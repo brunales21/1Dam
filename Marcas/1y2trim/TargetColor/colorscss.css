@@ -1,0 +1,66 @@
+
+#img1, #img2, #img3 {
+    display: none;
+}
+
+
+
+#caja-images:target {
+    display: none;
+}
+#caja-images:target #hider {
+    display: none;
+}
+
+
+#img1:target #boton1 {
+    display: none;
+}
+#img1:target {
+    display: flex;
+    justify-content: center;
+
+}
+#img2:target {
+    display: flex;
+    justify-content: center;
+
+}
+#img3:target {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+#botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+#boton-cerrartodo {
+    background-color: red;
+    padding: 3%;
+
+}
+
+
+#boton1 {
+    background-color: aqua;
+    padding: 5%;
+}
+
+#boton2 {
+    background-color: aquamarine;
+    padding: 5%;
+}
+
+#boton3 {
+    background-color:antiquewhite;
+    padding: 5%;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,79 @@
+
+#main-contenedor {
+    height: 45em;
+    display: grid;
+    
+    grid-template-areas:
+        'header header'
+        'nav nav'
+        'section aside'
+        'footer footer';
+
+    grid-template-columns: 70% auto;
+    grid-template-rows: 20% 7% 40% auto;
+}
+
+header {
+    background-color: cadetblue;
+    grid-area: header;
+
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    background-color: rgb(152, 229, 167);
+    text-decoration: none
+}
+
+
+section {
+    background-color: bisque;
+    grid-area: section;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+aside {
+    background-color: beige;
+    grid-area: aside;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+footer {
+    background-color: darkseagreen;
+    grid-area: footer;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+figure {
+    border-style: ridge;
+    border-color: black;
+    padding: 2%;
+    border-radius: 15%;
+}
+
+#subnav {
+    display: none;
+}
+
+#subnav:target {
+    display: flex;
+}

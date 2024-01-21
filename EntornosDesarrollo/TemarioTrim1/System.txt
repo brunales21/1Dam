@@ -1,0 +1,5 @@
+La consola:
+
+0 System.in   <
+1 System.out  >
+2 System.err  >

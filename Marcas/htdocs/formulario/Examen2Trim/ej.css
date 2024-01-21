@@ -1,0 +1,25 @@
+body {
+    background-color: green;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(10, auto);
+
+}
+
+#cromo {
+    grid-area: 1/1 / 2/2;
+    width: 50%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+#formulario {
+    grid-area: 1/4 / 2/6;
+
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    height: 20em;
+
+}

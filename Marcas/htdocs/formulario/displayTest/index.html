@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body id="id1">
+    <section>
+        <a class="sb" href="#">abrir</a>
+        <a class="hb" href="#container">cerrar</a>
+
+        <div id="container">
+            <div id="item1">item1</div>
+            <div id="item2">item2</div>
+            <div id="item3">item3</div>
+            <div id="item4">item4</div>
+        </div>
+
+    </section>
+    <table bruno="yes">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td rowspan="2">c</td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+
+    </table>
+    <div>hola</div>
+    <br/>
+<script>
+
+var node = document.getElementById("id1");
+node.childNodes.forEach( n => {
+    console.log(n);
+    if (n.attributes) {
+        Array.from(n.attributes).forEach(element => console.log(element));
+    }
+});
+</script>
+</body>
+</html>

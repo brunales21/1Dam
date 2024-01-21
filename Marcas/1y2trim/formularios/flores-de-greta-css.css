@@ -1,0 +1,65 @@
+nav {
+    background-color: rgb(203, 203, 203);
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    margin-left: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+}
+
+section {
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas: 'left-side form';
+    grid-template-columns: 40% auto;
+    grid-template-rows: 150%;
+}
+
+#logo-section {
+    grid-area: left-side;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#caja-greta {
+
+    background-color: rgb(234, 215, 70);
+    width: 15%;
+    border-style: dashed;
+    border-radius: 3em;
+    padding: 2%;
+    margin-left: 11em;
+    position: absolute;
+    transform: rotate(-15deg);
+
+}
+
+#imgs {
+    margin-top: -30%;
+}
+
+img {
+    margin-top: -3%;
+    margin-left: 50%;
+    width: 20%;
+}
+
+#form {
+    grid-area: form;
+    border-style: solid;
+    border-radius: 1em;
+    padding: 4%;
+    width: 60%;
+}
+
+p {
+    color: white;
+    
+}

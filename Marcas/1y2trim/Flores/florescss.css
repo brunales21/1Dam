@@ -1,0 +1,50 @@
+header {
+    display: block;
+    background-color: blue;
+    border: solid;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(255, 179, 0);
+    border: solid;
+}
+
+
+
+div {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+section {
+    background-color: grey;
+    border: solid;
+    padding: 5%;
+}
+
+aside {
+    background-color: rgb(208, 208, 208);
+    border: solid;
+    
+}
+
+footer {
+    display: block;
+    background-color: rgb(105, 74, 16);
+    border: solid;
+}
+
+footer h1 {
+    padding: 1%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    color: white;
+}
+

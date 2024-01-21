@@ -1,0 +1,105 @@
+body {
+    background-color: antiquewhite;
+}
+
+#contenedor1 {
+    height: 800px;
+    display: grid;
+    grid-template-areas: 'cabecera cabecera'
+                        'menu menu'
+                        'section aside';
+
+    grid-template-columns: 65% auto;
+    grid-template-rows: 20% 15% 65%;
+}
+
+#contenedor2 {
+    height: 400px;
+    display: grid;
+    grid-template-areas: 'prueba1 prueba2'
+                        'footer footer';
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 70% auto;
+}
+
+
+
+#caja1 {
+    grid-area: cabecera;
+
+    text-align: center;
+    background-color: rgb(198, 230, 37);
+}
+
+#caja2 {
+    grid-area: menu;
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgb(131, 212, 120);
+}
+
+a {
+    margin-top: 2%;
+    font-size: 120%;
+}
+
+
+
+#caja3 {
+
+    padding: 1%;
+    grid-area: section;
+
+    
+    background-color: rgb(62, 146, 110);
+    
+}
+
+#caja4 {
+
+    grid-area: aside;
+
+    display: flex;
+
+    background-color: rgb(106, 159, 41);
+}
+
+#caja4 img {
+    width: 100%;
+}
+
+#caja4-5 {
+    grid-area: prueba1;
+
+    text-align: center;
+    background-color: rgb(32, 100, 34);
+}
+
+#caja4-6 {
+    grid-area: prueba2;
+
+    text-align: center;
+    background-color: rgb(132, 165, 62);
+}
+
+
+#caja5 {
+
+    grid-area: footer;
+
+    text-align: center;
+    background-color: rgb(178, 74, 74);
+}
+
+@media (max-width:767px) {
+    #contenedor1 {
+        grid-template-areas: 'cabecera cabecera'
+                                'menu menu'
+                                'aside aside'
+                                'section section';
+
+        grid-template-rows: auto;
+    }
+}

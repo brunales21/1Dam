@@ -1,0 +1,58 @@
+VISTAS
+Una vista es una consulta almacenada a fin de utilizarla tantas veces como
+se desee. Una vista no contiene datos sino que contendrá la consulta pertinente que se ejecutará
+cada vez que se use.
+
+EJEMPLO
+
+create or replace view nombres_mujeres as
+    SELECT 
+        nombre
+    FROM
+        persona
+	where sexo = 'Mujer';
+
+WITH
+La clausula WITH crea una tabla temporal de forma similar a una vista pero solo existe
+durante la duración de la sentencia actual.
+
+EJEMPLO
+
+-- sacar los nombres de hombre con B%
+
+with nombres_hombres as (
+	SELECT 
+        nombre
+    FROM
+        persona
+	where sexo = 'Hombre';
+
+)
+SELECT 
+    nombre
+FROM
+    nombres_hombres
+WHERE
+    nombre like '%B';
+
+
+INDICES
+Los índices se usan para acelerar las operaciones de consulta y ordenación sobre los
+campos a los que hace referencia.
+
+crear
+CREATE INDEX idx_ape_nom_emp ON empleados(apellido, nombre);
+
+borrar
+DROP INDEX idx_ape_nom_emp;
+
+mostrar
+SHOW INDEXES FROM empleados;
+
+mostrar estadisticas
+EXPLAIN SELECT
+nombre, apellido, salario, id_departamento
+FROM
+empleados
+WHERE
+apellido LIKE 'G%';

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContacto.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <img src="imagenes/Logo.webp" id="logo" alt="">
+
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Cursos</a>
+            <a href="">Instalaciones</a>
+            <a href="">Instructores</a>
+            <a href="">Calendario</a>
+            <a href="indexContacto.html">Contacto</a>
+        </nav>
+        <section>
+            <div id="contenido">
+                <figure>
+                    <img src="imagenes/img-buceo.jpeg" alt="">
+                    <figcaption id="figcaption">
+                        <a href="#indexContacto.html" id="x">x</a>
+                        <a href="#pp" class="ppe">(Pulsa aquí para verlas)</a>
+                        
+                        Al aceptar las <a href="">políticas de privacidad</a>
+                        asumes lo siguiente sobre tus datos:
+                        <p id="pp">Responsable: Nombre del alumno
+                            Finalidad: Enviarte la guía de cómo disfrutar
+                            con seguridad el buceo.
+                            Legitimación: Tu consentimiento (como
+                            dice Amaral, sin ti no soy nada)
+                            Destinatarios: Los datos lo guardará
+                            ActiveCompaing, mi proveedor de marketing
+                            que está acogido al acuerdo de Seguridad
+                            EU-US Privacy. Tus datos estarán más
+                            seguros que la Casa Blanca.
+                            Derechos: Por supuesto tendrás derechos,
+                            entre otros, a acceder, rectificar, limitar tus
+                            datos.</p>
+                        
+                    </figcaption>
+                </figure>
+    
+                <form action="procesarDatos.php" method="post">
+                    <img src="imagenes/Logo.webp" alt="">
+                    <h1>Deseo formar parte del club</h1>
+                    <input type="text" placeholder="Nombre*" name="nombre">
+                    <input type="text" placeholder="Correo Electrónico*" name="correoelectronico">
+                    <input type="text" placeholder="Teléfono" name="telefono">
+                    <input type="checkbox" name="checkbox1"> <p>Acepto las <a href="#figcaption">políticas de privacidad</a>.</p>
+                    <input type="checkbox" name="checkbox2"> <p>Acepto recibir notificaciones.</p>
+                    <input type="submit" placeholder="Enviar" id="sendbuton">
+    
+                </form>
+            </div>
+            
+        </section>
+    </div>
+</body>
+</html>

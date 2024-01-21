@@ -1,0 +1,38 @@
+
+body {
+    background-color: rgb(0, 208, 255);
+}
+
+#container   {
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+#tablero {
+    width: 50em;
+    display: grid;
+    grid-template-rows: 1f 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color:white;
+}
+    
+img {
+    width: 10em;
+    justify-self: center;
+    align-items: center;
+}
+
+#left {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-style: solid;
+    border-radius: 3em;
+}
+
+#left * {
+    justify-self: center;
+    align-self: center;
+}

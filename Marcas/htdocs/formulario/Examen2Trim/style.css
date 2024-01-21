@@ -1,0 +1,48 @@
+@font-face {
+    font-family: nav-font;
+    src: url(fuente/secrcode.ttf);
+}
+
+body {
+    
+    background-color: red;
+    margin: 0%;
+
+}
+
+nav {
+    background-color: blue;
+
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
+
+    height: 8em;
+}
+
+#logo {
+    margin-left: 4%;
+}
+
+#menu {
+    background-color: blue;
+    grid-area: 1/2 / 3/3;
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 4%;
+    margin-right: 2%;
+}
+
+a {
+    color: white;
+    font-family: nav-font;
+
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+#fondo {
+    width: 100%;
+}

@@ -1,0 +1,24 @@
+Características de las rutinas.
+
+Podemos indicar algunas características del procedimiento o de la función. Las opciones
+disponibles son las siguientes:
+
+DETERMINISTIC: indica que la función siempre devuelve el mismo resultado cuando se utilizan los mismos parámetros de entrada.
+
+NOT DETERMINISTIC: la función no siempre devuelve el mismo resultado, aunque
+se utilicen los mismos parámetros de entrada. Esta es la opción que se selecciona
+por defecto cuando no se indica una característica de forma explícita.
+
+CONTAINS SQL: la función contiene sentencias SQL, pero no son de manipulación
+de datos (ni SELECT, ni INSERT, ni UPDATE). Algunos ejemplos de sentencias SQL
+que pueden aparecer en este caso son operaciones con variables (Ej: SET @x =
+1) o uso de funciones de MySQL (Ej: SELECT NOW();) entre otras. Pero en ningún
+caso aparecerán sentencias de escritura o lectura de datos.
+
+NO SQL: la función no contiene sentencias SQL.
+
+READS SQL DATA: la función no modifica los datos de la base de datos y que
+contiene sentencias de lectura de datos, como la sentencia SELECT.
+
+MODIFIES SQL DATA: la función sí modifica los datos de la base de datos y que
+contiene sentencias como INSERT, UPDATE o DELETE.

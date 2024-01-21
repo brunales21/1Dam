@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flores-de-greta-css.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body>
+    
+    <nav id="nav">
+        
+        <a href="#nav" id="abrir"><span class="icon-menu3"></span></a>
+        <a href="#" id="cerrar"><span class="icon-menu4"></span></a>
+        <ul>
+            <a href="">Inicio</a>
+            <a href="">Nuestro trabajo</a>
+            <a href="">Tienda</a>
+            <a href="">Contacto</a>
+        </ul>
+        
+    </nav>
+
+    <section>
+        <div id="logo-section">
+            <div id="imgs">
+                <img src="logo-social.png" alt="">
+                <img src="logo-social.png" alt="">
+            </div>
+            <div id="caja-greta">
+                <p id="titulo">Las flores de Greta</p><br>
+                <p id="frase-ofertas">No te pierdas ninguna de nuestras ofertas</p>
+            </div>
+        </div>
+        
+
+        <div id="form">
+            <form action="procesar-datos.php" method="post">
+                <label for="nombre_usuario">
+                    <input type="text" name="usuario" id="nombre_usuario" placeholder="Usuario">
+                </label>
+                <br><br>
+                <label for="clave_usuario">
+                    <input type="password" name="clave" id="clave_usuario" placeholder="Contraseña">
+                </label>
+                <br><br>
+                <input id="enviar-boton" type="submit" value="Enviar"><br>
+                <input type="checkbox" value="">
+                <p id="box"> Acepto las políticas de privacidad</p>
+                <input type="checkbox" value="" checked = "checked">
+                <p id="box">Mantenme acualizado de las novedades de nuestra web</p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

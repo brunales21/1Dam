@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+
+</head>
+<body>
+    <div id="marco">
+        <div id="adelia-img">
+            <img src="imgs/adelia.png" alt="">
+            <p id="titulo">adelia</p>
+
+        </div>
+
+        <div id="container1">
+            <h1>Estudio de mercado para <p id="decoration">GALLETAS DE COCO</p  ></h1>
+            <form action="form2.php" method="post" id="form1">
+                <div id="item1">
+                    <p>¿Que golosina te gusta consumir y por qué?</p>
+
+                    <input type="checkbox" id="checkbox1" name="checkbox1">
+                    <label for="checkbox1">Galletas</label>
+
+                    <input type="checkbox" id="checkbox2" name="checkbox2">
+                    <label for="checkbox2">Bombones</label>
+
+                    <input type="checkbox" id="checkbox3" name="checkbox3">
+                    <label for="checkbox3">Snaks</label>
+                </div>
+
+                <div id="item2">
+                    <p>¿Qué opina usted de las galletas como golosinas?</p>
+                    <textarea  name="opinion"></textarea> 
+                </div>
+
+                <div id="item3">
+                    <p>¿Qué sabor prefiere?</p>
+                    <select name="sabor">
+                        <option value="opcion1">Chocolate</option>
+                        <option value="opcion2">Fresa</option>
+                        <option value="opcion3">Vainilla</option>
+                    </select>
+                </div>
+
+                <div id="item4">
+                    <p>¿Qué precio pondría si tuviera ingredientes de máxima calidad y ECO?</p>
+                    <input type="range" min="0" max="6" step=“1” name="precio"> 
+                </div>
+
+                <div id="item5">
+                    <p>¿Aceptaría ser catador de nuestras galletas?</p>
+                    <input type="radio" name="catador"><label for="">Si</label>
+                    <input type="radio" name="catador"><label for="">No</label>
+                    <label for="">Email </label><input type="text" name="email">
+
+                </div>
+
+                <div id="item6">
+                    <p>¿De qué color le gustaría que fuese la caja?</p>
+                    <input type="color" name="color">
+                </div>
+
+                <div id="item7">
+                        <input type="submit" placeholder="Enviar">
+                </div>
+            </form>
+        </div>
+
+        <div id="container2">
+            <form action="form1.php" id="form-2" method="post">
+                <input type="text" placeholder="nombre" name="name"><br>
+                <input type="text" placeholder="edad" name="age"><br>
+                <input type="text" placeholder="localidad" name="place"><br>
+                <input type="text" placeholder="provincia" name="province">
+                <input type="radio" name="condicion" id="opcion1">
+                <label for="opcion1">Acepto las políticas de privacidad</label>
+                <input type="checkbox" checked = "checked" name="publicidad"> <label for="">Deseo que me tengan informado para otros lanzamientos</label>
+                <div id="item7">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            <h1 id="vertical-text">TRABAJAMOS PARA HACERTE SENTIR BIEN</h1>
+            <aside>
+                <img src="imgs/adelia.png" alt="">
+            </aside>
+        </div>
+    </div>
+
+    <div id="butons-container">
+        <a href="#" id="icon-box"><span class="icon-home"></span></a>
+        <a href="#container1" id="buton1">GALLETAS DE COCO</a>
+        <a href="#container2" id="buton2">SOBRE TI...</a>
+    </div>
+</body>
+</html>

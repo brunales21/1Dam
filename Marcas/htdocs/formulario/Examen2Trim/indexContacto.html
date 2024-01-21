@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleContacto.css">
+</head>
+<body>
+
+    <nav>
+        <img id="logo" src="imagenes/Logo.webp" alt="">
+        <div id="menu">
+            <a href="">Inicio</a>
+            <a href="">Cursos</a>
+            <a href="">Instalaciones</a>
+            <a href="">Instructores</a>
+            <a href="">Contacto</a>
+            <a href="indexContacto.html">Contacto</a>
+        </div>
+    </nav>
+    <section>
+        <figure id="cromo">
+            <img src="imagenes/img-buceo.jpeg" alt="">
+            <figcaption>
+                <p>Al aceptar las políticas de privacidad 
+                    asumes lo siguiente sobre tus datos:
+                </p>
+                <p>
+                    <b>Responsable</b>: Nombre del alumno
+                </p>
+                <p>
+                    <b>Finalidad</b>: Enviarte la guía de cómo disfrutar 
+                    con seguridad el buceo.
+                </p>
+                <p>
+                    <b>Legitimacion</b>: Tu consentimiento (como 
+                    dice Amaral, sin ti no soy nada)
+                </p>
+                <p>
+                    <b>Destinatarios</b>: Los datos lo guardará 
+                    ActiveCompaing, mi proveedor de marketing 
+                    que está acogido al acuerdo de Seguridad 
+                    EU-US Privacy. Tus datos estarán más 
+                    seguros que la Casa Blanca.
+                </p>
+                <p>
+                    <b>Derechos</b>: Por supuesto tendrás derechos, 
+                    entre otros, a acceder, rectificar, limitar tus 
+                    datos.
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure id="marco">
+            <img src="imagenes/Logo.webp" alt="">
+            <figcaption>
+                <form action="conectar-bdd.php" method="post">
+                    <p id="lema">Deseo formar parte del club</p>
+                    <input type="text" placeholder="Nombre*" name="name">
+                    <input type="text" placeholder="Correo electrónico*" name="correo">
+                    <input type="text" placeholder="Teléfono*" name="telefono">
+                    <div id="checkboxes">
+                        <input type="checkbox" id="cb" name="ch1"><label for="">Acepto las políticas de privacidad</label>
+                        <br>
+                        <input type="checkbox" id="cb" name="ch2"><label for="">Acepto recibir notificaciones.</label>
+                    </div>
+                    <input type="submit">
+                </form>
+            </figcaption>
+            
+        </figure>
+        
+    </section>
+</body>
+</html>

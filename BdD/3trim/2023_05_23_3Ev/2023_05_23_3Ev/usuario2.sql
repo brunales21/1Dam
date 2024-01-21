@@ -1,0 +1,8 @@
+-- Paso 2
+use pokedex;
+
+SET SESSION TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+START TRANSACTION;
+UPDATE pokemon SET altura = 1.7 WHERE nombre = 'Blastoise';
+COMMIT;
